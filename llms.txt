@@ -1,0 +1,24 @@
+# G2 & Capterra Reviews MCP Server
+
+> Hosted remote MCP server for B2B software reviews from G2 (G2 Crowd), Capterra, TrustRadius and Gartner Peer Insights: ratings, pros and cons, full review text, reviewer job title, industry and company size, sub-ratings, alternatives considered and switching reasons, filtered by stars, date, keyword or company size. One tool per site plus one tool that collects a product's reviews from several sites at once by product name. Read-only. No review-site account and no API keys; users sign in with a free Apify account (OAuth) and pay per review.
+
+## Install
+
+- Server name: software-reviews
+- Transport: streamable HTTP
+- URL: https://mcp.apify.com/?tools=fetch-actor-details,get-actor-run,get-dataset-items,zen-studio/software-review-scraper,zen-studio/g2-reviews-scraper,zen-studio/capterra-reviews-scraper,zen-studio/trustradius-review-scraper,zen-studio/gartner-review-scraper
+- Auth: Apify OAuth in the user's browser; alternative header `Authorization: Bearer <APIFY_TOKEN>`
+- Claude Code plugin: `claude plugin marketplace add zen-studio-labs/g2-capterra-reviews-mcp`, then `claude plugin install software-reviews@g2-capterra-reviews-mcp`
+
+## Docs
+
+- [README](https://github.com/zen-studio-labs/g2-capterra-reviews-mcp/blob/main/README.md): setup for every client, tools, pricing, FAQ
+- [Skill](https://github.com/zen-studio-labs/g2-capterra-reviews-mcp/blob/main/skills/software-reviews/SKILL.md): run flow, choosing a tool, input recipes, field sets, personal data
+
+## Tools
+
+- zen-studio/software-review-scraper: one product's reviews from G2, Capterra, TrustRadius and Gartner Peer Insights (Trustpilot on request) in one shared format, from a name, domain or review link; requested maxResults must be at least 100
+- zen-studio/g2-reviews-scraper: G2 reviews of a product or vendor, with date, star and keyword filters, plus G2's pros and cons summary
+- zen-studio/capterra-reviews-scraper: Capterra reviews with four sub-ratings, switching reasons and products compared, plus the product profile
+- zen-studio/trustradius-review-scraper: TrustRadius reviews with feature ratings and alternatives considered, filterable by company size
+- zen-studio/gartner-review-scraper: Gartner Peer Insights reviews for up to 10 products per run, with each product's rating profile

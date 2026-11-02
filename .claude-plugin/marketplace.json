@@ -1,0 +1,35 @@
+{
+  "name": "g2-capterra-reviews-mcp",
+  "owner": {
+    "name": "Zen Studio",
+    "url": "https://github.com/zen-studio-labs"
+  },
+  "metadata": {
+    "description": "G2, Capterra, TrustRadius and Gartner Peer Insights review tools and skill for Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "software-reviews",
+      "source": "./",
+      "description": "Read G2 (G2 Crowd), Capterra, TrustRadius and Gartner Peer Insights software reviews: ratings, pros and cons, reviewer role, industry and company size.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Zen Studio"
+      },
+      "homepage": "https://github.com/zen-studio-labs/g2-capterra-reviews-mcp",
+      "license": "MIT",
+      "keywords": [
+        "g2",
+        "g2 crowd",
+        "capterra",
+        "trustradius",
+        "gartner peer insights",
+        "software reviews",
+        "competitive intelligence",
+        "voice of customer",
+        "mcp"
+      ],
+      "category": "data"
+    }
+  ]
+}

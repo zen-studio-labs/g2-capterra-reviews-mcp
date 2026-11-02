@@ -1,0 +1,6 @@
+# ~/.codex/config.toml
+# Sign in afterwards with: codex mcp login software-reviews
+[mcp_servers.software-reviews]
+url = "https://mcp.apify.com/?tools=fetch-actor-details,get-actor-run,get-dataset-items,zen-studio/software-review-scraper,zen-studio/g2-reviews-scraper,zen-studio/capterra-reviews-scraper,zen-studio/trustradius-review-scraper,zen-studio/gartner-review-scraper"
+# Token instead of sign-in: export APIFY_TOKEN and uncomment the next line.
+# bearer_token_env_var = "APIFY_TOKEN"

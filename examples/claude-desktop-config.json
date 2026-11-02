@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "software-reviews": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://mcp.apify.com/?tools=fetch-actor-details,get-actor-run,get-dataset-items,zen-studio/software-review-scraper,zen-studio/g2-reviews-scraper,zen-studio/capterra-reviews-scraper,zen-studio/trustradius-review-scraper,zen-studio/gartner-review-scraper"]
+    }
+  }
+}

@@ -136,7 +136,7 @@ Project fields with `get-dataset-items` `fields` (comma-separated). Dot paths in
 Field notes:
 
 - **Company size.** G2 uses bands such as "Small-Business (50 or fewer emp.)", "Mid-Market (51-1000 emp.)" and "Enterprise (> 1000 emp.)"; Capterra and TrustRadius use employee ranges; Gartner uses annual revenue bands such as "1B-10B USD" or a sector such as "Gov't/PS/Ed". In all-sites rows `reviewer.companySizeUnit` says which.
-- **G2 reviewers without a job title.** `reviewerTitle` is null on those rows and `companySize` still holds the size band. A reviewer who gives an industry but no title can show the industry in `reviewerTitle`; when it equals `reviewerIndustry`, treat the title as not given.
+- **G2 reviewers without a job title.** `reviewerTitle` is null on those rows and `companySize` still holds the size band. A reviewer who gives an industry but no title can show the industry name, such as "Information Technology and Services", in `reviewerTitle`; treat a title that reads like an industry as not given. `reviewerIndustry` is often empty on G2 rows.
 - **HTML entities in G2 text.** Some G2 fields, such as job titles, contain entities like `&amp;`. Decode them before showing them.
 - **Ratings.** G2 `starRating` (half stars) and Capterra `overallRating` run 1 to 5; TrustRadius `rating` runs 1 to 10; all-sites `rating` is on a five-point scale with `ratingOriginal` and `ratingScale` kept. Capterra `recommendationRating` is 0 to 10.
 - **Incentives and verification.** G2 `incentivized`, `validatedReviewer` and `reviewSource`; Capterra `incentivized` and `reviewSource`; TrustRadius `trustBadge`; Gartner `incentiveCode`. Report the incentivized share when the user compares ratings.
